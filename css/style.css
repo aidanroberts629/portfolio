@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.index {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/nyc-background.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutme,
+.mywork {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/miami-background.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.mywork>h1 {
+    text-align: center;
+    margin-top: 125px;
+    margin-left: 2rem;
+    color: rgb(192, 195, 204);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 10vw;
+    list-style-type: none;
+    margin-top: 25px;
+    width: 100%;
+}
+
+ul {
+    position: absolute;
+    right: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a {
+    background-color: #fff;
+    color: #000;
+}
+
+strong>a {
+    color: aqua;
+}
+
+.logo img {
+    position: fixed;
+    width: 75px;
+    height: auto;
+    top: 25px;
+    left: 10vw;
+    display: inline-block;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.mylogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about {
+    position: absolute;
+    color: white;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    left: 25vw;
+    right: 25vw;
+    top: 25vh;
+    margin: auto;
+}
+
+#about-desc {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15%;
+}
+
+.headshot div {
+    margin: 10px;
+    padding: 10px;
+}
+
+.headshot img {
+    width: auto;
+    height: 33vh;
+}
+
+p {
+    margin-bottom: 2.5vh;
+}
+
+#list {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
+}
+
+.boxed {
+    flex: 1 0 400px;
+}
+
+.boxed>img {
+    margin-left: 2rem;
+    height: 40%;
+    width: 70%;
+    margin-bottom: 25px;
+}
+
+.boxed>.icon {
+    height: 15%;
+    width: 25%;
+    margin-left: 235px;
+    margin-right: 200px;
+}
+
+.boxed>.mobile-img {
+    height: 45%;
+    width: 35%;
+}
+
+.name {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(241, 162, 71);
+}
+
+.info {
+    text-align: left;
+    margin: 1em;
+    color: white;
+    margin-bottom: 25px;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 1400px) {
+    header.aboutme {
+        display: flex;
+    }
+    header.index {
+        display: flex;
+    }
+    .about {
+        flex-direction: column-reverse;
+    }
+    .about {
+        width: auto;
+        margin-top: -10vh;
+    }
+    #about-desc {
+        padding: 0;
+        margin-top: 5vh;
+    }
+    #about-desc div {
+        margin: auto;
+        padding: 0;
+    }
+    p {
+        margin-bottom: 2.5vh;
+    }
+    .headshot img {
+        width: 33vw;
+        height: auto;
+        margin: auto;
+        display: block;
+    }
+    .logo img {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0vw;
+    }
+    ul {
+        position: relative;
+        right: auto;
+    }
+    #list {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        padding: 2rem;
+        margin: auto;
+    }
+    .mylogo img {
+        top: 50%;
+        left: 50%;
+        width: 50vw;
+        height: auto;
+        margin: auto;
+        display: block;
+    }
+    .boxed>.icon {
+        height: 0%;
+        width: 0%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
