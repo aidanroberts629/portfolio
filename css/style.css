@@ -253,4 +253,8 @@ p {
         margin-left: 10px;
         margin-right: 10px;
     }
+    .mywork>h1 {
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+    }
 }
