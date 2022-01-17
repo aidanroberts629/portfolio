@@ -147,8 +147,7 @@ p {
 .boxed>.icon {
     height: 15%;
     width: 25%;
-    margin-left: 235px;
-    margin-right: 200px;
+    margin-left: 2rem;
 }
 
 .boxed>.mobile-img {
@@ -173,7 +172,7 @@ p {
     margin-left: 2rem;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
     header.aboutme {
         display: flex;
     }
@@ -237,8 +236,6 @@ p {
     .boxed>.icon {
         height: 0%;
         width: 0%;
-        margin-left: 0px;
-        margin-right: 0px;
     }
     .boxed {
         margin-bottom: 2rem;
