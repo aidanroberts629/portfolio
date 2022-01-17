@@ -185,7 +185,9 @@ p {
         flex-direction: column-reverse;
     }
     .about {
-        width: auto;
+        width: 65%;
+        right: 0;
+        left: 0;
         margin-top: -10vh;
     }
     #about-desc {
