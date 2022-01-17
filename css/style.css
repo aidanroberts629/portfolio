@@ -97,6 +97,9 @@ strong>a {
     right: 25vw;
     top: 25vh;
     margin: auto;
+    background-color: rgba(53, 53, 53, 0.8);
+    padding: 20px;
+    border-radius: 25px;
 }
 
 #about-desc {
@@ -124,7 +127,10 @@ p {
     flex-flow: row wrap;
     text-align: center;
     padding: 2rem;
-    margin: auto;
+    margin: 2rem;
+    background-color: rgba(53, 53, 53, 0.8);
+    padding: 10px;
+    border-radius: 25px;
 }
 
 .boxed {
