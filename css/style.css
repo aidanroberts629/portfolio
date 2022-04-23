@@ -21,7 +21,7 @@
 
 .mywork>h1 {
     text-align: center;
-    margin-top: 125px;
+    margin-top: 75px;
     margin-left: 2rem;
     color: rgb(192, 195, 204);
 }
@@ -140,7 +140,7 @@ p {
 .boxed>img {
     margin-left: 2rem;
     height: 40%;
-    width: 70%;
+    width: 60%;
     margin-bottom: 25px;
 }
 
@@ -238,7 +238,7 @@ p {
         width: 0%;
     }
     .boxed {
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
     .name {
         margin-right: 2rem;
@@ -254,8 +254,14 @@ p {
         margin-right: 2rem;
         margin-bottom: 1rem;
     }
+    .info {
+        width: 65%;
+        text-align: center;
+        margin: auto;
+        padding-top: 2rem;
+    }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .boxed {
         margin-bottom: 8rem;
     }
