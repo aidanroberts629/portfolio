@@ -3,6 +3,7 @@
     padding: 0;
     font-family: Sora;
 }
+
 .index {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/nyc-background.jpg);
     height: 100vh;
@@ -56,13 +57,25 @@ ul li a:hover {
     color: #000;
 }
 
-ul li.active a {
-    background-color: #fff;
-    color: #000;
+.info a:link {
+    color: aqua;
+}
+
+.info a:visited {
+    color: lightskyblue;
 }
 
 strong>a {
     color: aqua;
+}
+
+strong>a:visited {
+    color: lightskyblue;
+}
+
+ul li.active a {
+    background-color: #fff;
+    color: #000;
 }
 
 .logo img {
@@ -260,6 +273,7 @@ p {
         padding-top: 2rem;
     }
 }
+
 @media screen and (max-width: 600px) {
     .boxed {
         margin-bottom: 8rem;
