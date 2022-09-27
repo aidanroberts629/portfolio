@@ -52,6 +52,14 @@ ul li a {
     transition: 0.5s ease;
 }
 
+ul li span {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 19px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
 ul li a:hover {
     background-color: #fff;
     color: #000;
@@ -74,6 +82,11 @@ strong>a:visited {
 }
 
 ul li.active a {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active span {
     background-color: #fff;
     color: #000;
 }
