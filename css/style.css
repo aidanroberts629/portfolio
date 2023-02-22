@@ -22,7 +22,6 @@
 .mywork>h1 {
     text-align: center;
     margin-top: 75px;
-    margin-left: 2rem;
     color: rgb(192, 195, 204);
     text-shadow: 4px 4px #000000;
 }
@@ -119,8 +118,7 @@ ul li.active span {
     width: 50vw;
     display: flex;
     flex-direction: row;
-    left: 25vw;
-    right: 25vw;
+    left: 24vw;
     top: 25vh;
     margin: auto;
     background-color: rgba(53, 53, 53, 0.8);
@@ -155,9 +153,10 @@ p {
     padding: 2rem;
     margin: 2rem;
     background-color: rgba(53, 53, 53, 0.8);
-    padding: 10px;
+    padding: 25px;
     padding-bottom: 50px;
     border-radius: 25px;
+    top: 100px;
 }
 
 .boxed {
@@ -165,28 +164,27 @@ p {
 }
 
 .boxed>img {
-    margin-left: 2rem;
     height: 40%;
-    width: 60%;
-    margin-bottom: 25px;
+    width: 70%;
 }
 
 .boxed>.icon {
     height: 15%;
     width: 25%;
-    margin-left: 2rem;
+    margin-bottom: 18px;
 }
 
 .boxed>.mobile-img {
     height: 40%;
     width: 35%;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
 }
 
 .name {
     display: block;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-left: 2rem;
     font-size: 24px;
     font-weight: bold;
     color: rgb(241, 162, 71);
@@ -195,12 +193,14 @@ p {
 
 .info {
     text-align: left;
-    margin: 1em;
-    color: white;
+    margin-top: 1.5em;
     margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 5rem;
+    color: white;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
     header.aboutme {
         display: flex;
     }
@@ -251,7 +251,7 @@ p {
         flex-flow: column wrap;
         text-align: center;
         padding: 2rem;
-        margin: auto;
+        margin: 2rem;
     }
     .mylogo img {
         top: 50%;
@@ -268,18 +268,7 @@ p {
     .boxed {
         margin-bottom: 5rem;
     }
-    .name {
-        margin-right: 2rem;
-    }
-    .boxed>img {
-        margin-left: 0rem;
-    }
-    .boxed>.mobile-img {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
     .mywork>h1 {
-        margin-right: 2rem;
         margin-bottom: 3rem;
     }
     .info {
@@ -304,5 +293,14 @@ p {
     .boxed>img {
         height: 40%;
         width: 75%;
+    }
+    #list {
+        margin: auto;
+    }
+    .boxed>.mobile-img {
+        height: 40%;
+        width: 35%;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
