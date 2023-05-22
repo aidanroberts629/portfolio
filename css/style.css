@@ -17,6 +17,8 @@
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .mywork>h1 {
@@ -25,6 +27,13 @@
     color: rgb(192, 195, 204);
     text-shadow: 4px 4px #000000;
 }
+.aboutme>h1 {
+    text-align: center;
+    margin-top: 75px;
+    color: rgb(192, 195, 204);
+    text-shadow: 4px 4px #000000;
+}
+
 
 nav {
     position: fixed;
@@ -33,6 +42,7 @@ nav {
     list-style-type: none;
     margin-top: 25px;
     width: 100%;
+    z-index: 9;
 }
 
 ul {
@@ -119,7 +129,7 @@ ul li.active span {
     display: flex;
     flex-direction: row;
     left: 24vw;
-    top: 25vh;
+    top: 15vh;
     margin: auto;
     background-color: rgba(53, 53, 53, 0.8);
     padding: 20px;
@@ -165,7 +175,7 @@ p {
 
 .boxed>img {
     height: 40%;
-    width: 70%;
+    width: 75%;
 }
 
 .boxed>.icon {
@@ -189,6 +199,7 @@ p {
     font-weight: bold;
     color: rgb(241, 162, 71);
     text-shadow: 2px 2px #726310;
+    text-align: center;
 }
 
 .info {
@@ -209,9 +220,8 @@ p {
     }
     .about {
         flex-direction: column-reverse;
-    }
-    .about {
         width: 65%;
+        top: 25vh;
         right: 0;
         left: 0;
         margin-top: -16vh;
@@ -219,13 +229,11 @@ p {
     #about-desc {
         padding: 0;
         margin-top: 5vh;
+        text-align: center;
     }
     #about-desc div {
         margin: auto;
         padding: 0;
-    }
-    p {
-        margin-bottom: 2.5vh;
     }
     .headshot img {
         width: 30vw;
@@ -251,7 +259,8 @@ p {
         flex-flow: column wrap;
         text-align: center;
         padding: 2rem;
-        margin: 2rem;
+        margin: auto;
+        width: 65%;
     }
     .mylogo img {
         top: 50%;
@@ -272,10 +281,14 @@ p {
         margin-bottom: 3rem;
     }
     .info {
-        width: 65%;
+        width: 90%;
         text-align: center;
         margin: auto;
         padding-top: 2rem;
+    }
+    .boxed>img {
+        height: 50%;
+        width: 85%;
     }
 }
 
@@ -283,24 +296,14 @@ p {
     .boxed {
         margin-bottom: 2rem;
     }
-    .info {
-        margin-bottom: 2rem;
-        width: 80%;
-    }
 }
 
 @media screen and (max-width: 650px) {
-    .boxed>img {
-        height: 40%;
-        width: 75%;
-    }
-    #list {
-        margin: auto;
-    }
+    
     .boxed>.mobile-img {
         height: 40%;
         width: 35%;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
     }
 }
