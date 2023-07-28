@@ -149,7 +149,7 @@ ul li.active span {
 
 .headshot img {
     width: auto;
-    height: 45vh;
+    height: 30vh;
 }
 
 p {
@@ -236,7 +236,7 @@ p {
         padding: 0;
     }
     .headshot img {
-        width: 30vw;
+        width: 20vw;
         height: auto;
         margin: auto;
         display: block;
