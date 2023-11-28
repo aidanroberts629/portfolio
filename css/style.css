@@ -128,8 +128,8 @@ ul li.active span {
     width: 50vw;
     display: flex;
     flex-direction: row;
-    left: 24vw;
-    top: 15vh;
+    left: 22.5vw;
+    top: 10vh;
     margin: auto;
     background-color: rgba(53, 53, 53, 0.8);
     padding: 20px;
