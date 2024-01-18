@@ -236,7 +236,7 @@ p {
         padding: 0;
     }
     .headshot img {
-        width: 20vw;
+        width: 30vw;
         height: auto;
         margin: auto;
         display: block;
@@ -295,6 +295,13 @@ p {
 @media screen and (max-width: 775px) {
     .boxed {
         margin-bottom: 2rem;
+    }
+    
+    .headshot img {
+        width: 40vw;
+        height: auto;
+        margin: auto;
+        display: block;
     }
 }
 
