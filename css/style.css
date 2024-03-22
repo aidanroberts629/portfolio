@@ -6,14 +6,15 @@
 
 .index {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/nyc-background.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
 }
 
-.aboutme,
 .mywork {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/miami-background.jpg);
+    padding-top: 75px;
+}
+
+.index,
+.mywork {
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -36,18 +37,20 @@
 
 
 nav {
+    animation: fadeIn 0.75s;
     position: fixed;
     top: 0;
     right: 10vw;
     list-style-type: none;
-    margin-top: 25px;
+    margin-top: 32px;
     width: 100%;
     z-index: 9;
 }
 
 ul {
     position: absolute;
-    right: 0;
+    right: 0px;
+    top: 36px;
 }
 
 ul li {
@@ -103,8 +106,8 @@ ul li.active span {
 
 .logo img {
     position: fixed;
-    width: 75px;
-    height: auto;
+    width: 284px;
+    height: 72px;
     top: 25px;
     left: 10vw;
     display: inline-block;
@@ -115,15 +118,23 @@ ul li.active span {
     margin: auto;
 }
 
-.mylogo {
+.logo-container {
+    width: 100%;
+    height: 100%;
+}
+
+.namelogo {
     position: absolute;
+    animation: fadeIn 0.75s;
+}
+
+.name {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .about {
-    position: absolute;
     color: white;
     width: 50vw;
     display: flex;
@@ -132,24 +143,28 @@ ul li.active span {
     top: 10vh;
     margin: auto;
     background-color: rgba(53, 53, 53, 0.8);
-    padding: 20px;
-    border-radius: 25px;
+    padding: 25px;
+    border-radius: 30px;
 }
 
 #about-desc {
     display: flex;
     flex-direction: column;
-    padding-right: 15%;
+    padding-right: 40%;
 }
 
 .headshot div {
     margin: 10px;
     padding: 10px;
+    position: relative;
 }
 
 .headshot img {
     width: auto;
     height: 30vh;
+    position: absolute;
+    transform: translate(-100%, 24%);
+    border-radius: 15px;
 }
 
 p {
@@ -195,7 +210,7 @@ p {
     background-color: rgba(83, 108, 129, 0.178);
 }
 
-.name {
+.project-name {
     display: block;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -237,7 +252,7 @@ p {
     z-index: 1;
     bottom: 200%;
     left: -665%;
-    margin-left: -80px;
+    margin-left: -52px;
     padding: 12px;
     padding-top: 28px;
     padding-bottom: 28px;
@@ -255,14 +270,14 @@ p {
     border-color: #777777 transparent transparent transparent;
   }
   
-  /* Toggle this class - hide and show the popup */
+  /* hide/show info popups on work page */
   .popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
   }
-  
-  /* Add animation (fade in the popup) */
+
+  /* animate fading in */
   @-webkit-keyframes fadeIn {
     from {opacity: 0;} 
     to {opacity: 1;}
@@ -273,6 +288,106 @@ p {
     to {opacity:1 ;}
   }
 
+  .fade {
+    animation: fadeIn 1.0s;
+  }
+  .spacer {
+    height: 900px;
+  }
+
+  .small-spacer {
+    height: 150px;
+  }
+
+  /* animate fading out */
+  @-webkit-keyframes fadeOut {
+    from {opacity: 1;} 
+    to {opacity: 0;}
+  }
+  
+  @keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity:0 ;}
+  }
+
+  /* appear animation */
+  .appear {
+    -webkit-transition: all 0.75s;
+    transition: all 0.75s;
+    opacity: 0;
+    height: 500px;
+  }
+  
+  .appear.inview {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
+  }
+
+  .appear2 {
+    -webkit-transition: all 0.75s;
+    transition: all 0.75s;
+    opacity: 0;
+    height: 500px;
+  }
+  
+  .appear2.inview {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
+  }
+
+  /* footer */
+  .footer-div {
+    height: 50px;
+    width: 100%;
+    list-style-type:none;
+    display:flex;
+    justify-content: center;
+
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-position: 0% 0%;
+
+    position: relative;
+    bottom: 100px;
+    padding-bottom: 125px;
+  }
+  
+  .footer-div ul {
+    list-style-type:none;
+    display:flex;
+    justify-content: center;
+    margin: 0px 25%;
+  }
+
+  .footer-div ul li {
+    display: list-item;
+    padding: 5px 10px;
+    margin: 0 3px;
+  }
+  
+  .footer-div a {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .socials {
+    font-size: 20px;
+    width: 50%;
+  }
+  
+  .socials li a {
+    margin: 0 10px;
+  }
+
+/* "tablet" mode */
 @media screen and (max-width: 1910px) {
     header.aboutme {
         display: flex;
@@ -287,6 +402,7 @@ p {
         right: 0;
         left: 0;
         margin-top: -16vh;
+        height: 925px;
     }
     #about-desc {
         padding: 0;
@@ -297,12 +413,16 @@ p {
         margin: auto;
         padding: 0;
     }
+    
     .headshot img {
         width: 30vw;
         height: auto;
         margin: auto;
+        position: static;
         display: block;
+        transform: translate(0%,0%);
     }
+
     .logo img {
         display: none;
     }
@@ -324,7 +444,7 @@ p {
         margin: auto;
         width: 65%;
     }
-    .mylogo img {
+    .name img {
         top: 50%;
         left: 50%;
         width: 50vw;
@@ -332,6 +452,11 @@ p {
         margin: auto;
         display: block;
     }
+
+    .popup .popuptext {
+        margin-left: -64px;
+    }
+
     .boxed>.icon {
         height: 0%;
         width: 0%;
@@ -366,6 +491,8 @@ p {
     width: 384px;
     left: -485%;
   }
+   
+
 }
 @media screen and (max-width: 775px) {
     .boxed {
@@ -377,17 +504,33 @@ p {
         margin: auto;
         display: block;
     }
+    .info {
+        width: 85%;
+    }
+    .about {
+        height: 1050px;
+    }
 }
 
 @media screen and (max-width: 650px) {
-    
+    .about {
+        width: 80%;
+        height: 1125px;
+    }
+
+    .footer-div ul li {
+        display: list-item;
+        padding: 2px 2px;
+        margin: 0 1px;
+    }
+
     .boxed>.mobile-img {
         margin-left: 0.75rem;
         margin-right: 0.75rem;
     }
 
     #list {
-        width: 80%;
+        width: 75%;
     }
 
     /* Popups */
@@ -396,4 +539,71 @@ p {
     bottom: 205%;
     left: -315%;
   }
+  
+  .name img {
+    top: 50%;
+    left: 50%;
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 300px) {
+    
+    .about {
+        height: 1400px;
+    }
+    
+    #list {
+        width: 90%;
+    }
+
+    .footer-div ul li {
+        display: list-item;
+        padding: 1px 1px;
+        margin: 0 1px;
+        width: 55%;
+    }
+    
+    .footer-div a {
+        margin: 0 1px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-div ul li a {
+        padding: 4px 15px;
+    }
+}
+
+@media screen and (max-height: 1500px) and (max-width: 1500px) { /*tablet dimensions, basically*/
+    .spacer {
+        height: 1500px;
+    }
+}
+
+@media screen and (max-height: 1000px) {
+    .spacer {
+        height: 1000px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .spacer {
+        height: 800px;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    .spacer {
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 2250px) { /* wide resolutions */
+    .headshot img {
+        height: 20vh;
+    }
 }
