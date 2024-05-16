@@ -249,7 +249,7 @@
 
     <h1>Misc. Projects</h1>
     <section id="list">
-        <div class="boxed">
+        <div class="boxed misc-img">
             <span class="project-name">Terrestrial Cargo Run (Portal 2 Puzzle)</span>
             <br>
             <img src="media/cargo-run-screenshot.jpg" alt="Partie screenshot">
@@ -261,7 +261,7 @@
                     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3242311026" target="_blank" rel="noopener noreferrer">here</a>.</strong>
             </div>
         </div>
-        <div class="boxed">
+        <div class="boxed misc-img">
             <span class="project-name">Partie 3D Desktop Application</span>
             <br>
             <img src="media/partie-screenshot.jpg" alt="Partie screenshot">
@@ -273,7 +273,7 @@
                     <a href="https://drive.google.com/file/d/1zzoRAy9xu5PLnEzlDjRIgx017qN78Nme/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.</strong>
             </div>
         </div>
-        <div class="boxed">
+        <div class="boxed misc-img">
             <span class="project-name">Overwatch Audio Visualizer Website</span>
             <br>
             <img src="media/audio-visualizer-screenshot.jpg" alt="Audio Visualizer screenshot">
@@ -284,7 +284,7 @@
                     <a href="https://people.rit.edu/ar8179/330/project-2/home.html" target="_blank" rel="noopener noreferrer">here</a>.</strong>
             </div>
         </div>
-        <div class="boxed">
+        <div class="boxed misc-img">
             <span class="project-name">WatchList Website</span>
             <br>
             <img src="media/watchlist-screenshot.jpg" alt="WatchList screenshot">
@@ -295,7 +295,7 @@
                     <a href="https://aidanroberts629.github.io/watchlist/" target="_blank" rel="noopener noreferrer">here</a>.</strong>
             </div>
         </div>
-        <div class="boxed">
+        <div class="boxed misc-img">
             <span class="project-name">GIPHY Finder Website</span>
             <br>
             <img src="media/giphyfinder-screenshot.jpg" alt="GIPHY Finder screenshot">
@@ -318,6 +318,31 @@
 
         window.onbeforeunload = function () {
         window.scrollTo(0, 0);
+        }
+
+        var navbar = document.querySelector("nav");
+        var namelogo = document.querySelector(".logo img");
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function()
+        {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos)
+            {
+                navbar.style.top = "0";
+                namelogo.style.top = "20px";
+            }
+            else
+            {
+                navbar.style.top = "-100px";
+                namelogo.style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+        //force scroll to top of page upon refresh
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
         }
     </script>
 </body>

@@ -45,6 +45,7 @@ nav {
     margin-top: 32px;
     width: 100%;
     z-index: 9;
+    transition: top 0.3s;
 }
 
 ul {
@@ -111,6 +112,7 @@ ul li.active span {
     top: 25px;
     left: 10vw;
     display: inline-block;
+    transition: top 0.3s;
 }
 
 .main {
@@ -190,6 +192,11 @@ p {
 
 .boxed>img {
     height: 35%;
+    width: 90%;
+}
+
+.misc-img>img {
+    height: 45%;
     width: 90%;
 }
 
@@ -475,6 +482,10 @@ p {
     }
     .boxed>img {
         height: 50%;
+        width: 85%;
+    }
+    .misc-img>img {
+        height: 60%;
         width: 85%;
     }
     /* Popups */

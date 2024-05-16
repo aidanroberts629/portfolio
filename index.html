@@ -96,8 +96,8 @@
             
             if(windowWidth>1920) //for larger monitors, scroll image off screen a bit faster
                 namelogo.style.left = window.innerWidth / 2 - scrollPercent*window.innerWidth/2 * 0.75 + 'px'; //actually moving the image
-            if(windowHeight>1750 && windowWidth<windowHeight) //for vertical monitors, scroll image even faster
-                namelogo.style.left = window.innerWidth / 2 - scrollPercent*window.innerWidth/2 * 1.25 + 'px'; //actually moving the image
+            else if(windowHeight>1750 && windowWidth<windowHeight) //for vertical monitors, scroll image even faster
+                namelogo.style.left = window.innerWidth / 2 - scrollPercent*window.innerWidth/2 * 1.25 + 'px';
             else //1920px wide monitors and smaller
                 namelogo.style.left = window.innerWidth / 2 - scrollPercent*window.innerWidth/2 * 0.6 + 'px';
 
