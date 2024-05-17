@@ -141,6 +141,28 @@
 
         });
 
+        //hide nav bar upon scrolling down on tablet/mobile
+        var navbar = document.querySelector("nav");
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function()
+        {
+            if(windowWidth<=1150)
+            {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos)
+                {
+                    navbar.style.top = "0";
+                }
+                else
+                {
+                    navbar.style.top = "-100px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+            
+        }
+
         //force scroll to top of page upon refresh
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
