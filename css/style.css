@@ -24,7 +24,7 @@
 
 .mywork>h1 {
     text-align: center;
-    margin-top: 75px;
+    margin-top: 48px;
     color: rgb(228, 229, 233);
     text-shadow: 4px 4px #000000;
 }
@@ -201,8 +201,8 @@ p {
 }
 
 .boxed>.icon {
-    height: 12.5%;
-    width: 20%;
+    height: 6.25%;
+    width: 10%;
     margin-bottom: 18px;
 }
 
@@ -215,6 +215,7 @@ p {
 
 .boxed:hover {
     background-color: rgba(83, 108, 129, 0.178);
+    border-radius: 30px;
 }
 
 .project-name {
@@ -230,10 +231,10 @@ p {
 
 .info {
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: white;
 }
 
@@ -460,10 +461,6 @@ p {
         display: block;
     }
 
-    .popup .popuptext {
-        margin-left: -64px;
-    }
-
     .boxed>.icon {
         height: 0%;
         width: 0%;
@@ -493,6 +490,7 @@ p {
     width: 640px;
     bottom: 205%;
     left: -835%;
+    margin-left: -50px;
   }
 }
 
@@ -500,7 +498,8 @@ p {
     /* Popups */
   .popup .popuptext {
     width: 384px;
-    left: -485%;
+    left: -475%;
+    margin-left: -64px;
   }
    
 
