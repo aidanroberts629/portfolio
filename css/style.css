@@ -5,11 +5,11 @@
 }
 
 .index {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/nyc-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)), url(../media/stardust.png);
 }
 
 .mywork {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/miami-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)), url(../media/stardust.png);
     padding-top: 75px;
 }
 
@@ -28,13 +28,14 @@
     color: rgb(228, 229, 233);
     text-shadow: 4px 4px #000000;
 }
-.aboutme>h1 {
-    text-align: center;
-    margin-top: 75px;
-    color: rgb(192, 195, 204);
-    text-shadow: 4px 4px #000000;
+.index h1 {
+    color: rgb(120, 119, 192);
+    text-shadow: 3px 3px #0f1f41;
 }
 
+.index p {
+    text-shadow: 2px 2px #000000;
+}
 
 nav {
     animation: fadeIn 0.75s;
@@ -137,14 +138,14 @@ ul li.active span {
 }
 
 .about {
-    color: white;
+    color: rgb(255, 255, 255);
     width: 50vw;
     display: flex;
     flex-direction: row;
     left: 22.5vw;
     top: 10vh;
     margin: auto;
-    background-color: rgba(53, 53, 53, 0.8);
+    background-color: rgba(112, 112, 112, 0.5);
     padding: 25px;
     border-radius: 30px;
 }
@@ -179,7 +180,7 @@ p {
     text-align: center;
     padding: 2rem;
     margin: 2rem;
-    background-color: rgba(53, 53, 53, 0.8);
+    background-color: rgba(112, 112, 112, 0.5);
     padding: 25px;
     padding-bottom: 50px;
     border-radius: 25px;
@@ -214,18 +215,18 @@ p {
 }
 
 .boxed:hover {
-    background-color: rgba(83, 108, 129, 0.178);
+    background-color: rgba(105, 126, 141, 0.375);
     border-radius: 30px;
 }
 
 .project-name {
     display: block;
     margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 24px;
+    margin-bottom: 0.75rem;
+    font-size: 28px;
     font-weight: bold;
-    color: rgb(241, 162, 71);
-    text-shadow: 2px 2px #726310;
+    color: rgb(120, 119, 192);
+    text-shadow: 3px 3px #0f1f41;
     text-align: center;
 }
 
@@ -236,6 +237,7 @@ p {
     margin-right: 2rem;
     margin-bottom: 1rem;
     color: white;
+    text-shadow: 2px 2px #000000;
 }
 
 .popup {
@@ -252,7 +254,7 @@ p {
   .popup .popuptext {
     visibility: hidden;
     width: 512px;
-    background-color: #777777;
+    background-color: rgb(141, 141, 156);
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -275,7 +277,7 @@ p {
     margin-left: -25px;
     border-width: 25px;
     border-style: solid;
-    border-color: #777777 transparent transparent transparent;
+    border-color: rgb(141, 141, 156) transparent transparent transparent;
   }
   
   /* hide/show info popups on work page */
