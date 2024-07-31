@@ -468,7 +468,7 @@ p {
         width: 0%;
     }
     .boxed {
-        margin-bottom: 5rem;
+        margin-bottom: 2.5rem;
     }
     .mywork>h1 {
         margin-bottom: 3rem;
@@ -480,8 +480,11 @@ p {
         padding-top: 2rem;
     }
     .boxed>img {
-        height: 50%;
+        /*height: 50%;
         width: 85%;
+        */
+        width: 960px;
+        height: 540px;
     }
     .misc-img>img {
         height: 60%;
@@ -494,6 +497,17 @@ p {
     left: -835%;
     margin-left: -50px;
   }
+  .boxed>.mobile-img {
+    height: 540px;
+    width: 30%;
+}
+}
+
+@media screen and (max-width: 1600px) {
+    .boxed>img {
+        width: 720px;
+        height: 405px;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -504,6 +518,10 @@ p {
     margin-left: -64px;
   }
    
+  .boxed>img {
+    width: 480px;
+    height: 270px;
+  }
 
 }
 @media screen and (max-width: 775px) {
@@ -522,6 +540,10 @@ p {
     .about {
         height: 1050px;
     }
+    .boxed>img {
+        width: 240px;
+        height: 135px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -537,12 +559,15 @@ p {
     }
 
     .boxed>.mobile-img {
+        height: 35%;
+        width: 30%;
         margin-left: 0.75rem;
         margin-right: 0.75rem;
     }
 
     #list {
-        width: 75%;
+        padding: 1rem;
+        width: 85%;
     }
 
     /* Popups */
