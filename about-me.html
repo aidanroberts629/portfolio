@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://kit.fontawesome.com/79e3eed161.js" crossorigin="anonymous"></script>
+    <title>Aidan Roberts</title>
+</head>
+
+<body class="index fade">
+    <header>
+        <div class="main">
+            <div class="logo fade">
+                <img src="media/name.png" alt="Logo">
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <nav class="menu">
+                <ul class="left-nav">
+                    <li class=>
+                        <a href="index.html">Game Design</a>
+                    </li>
+                    <li>
+                        <a href="other-work.html">Other Work</a>
+                    </li>
+                </ul>
+                <ul class="right-nav">
+                    <li class="active">
+                        <span href="#">About Me</span>
+                    </li>
+                    <li>
+                        <a href="media/Roberts_Resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br><br>
+    <div class="about">
+        <div id="about-desc">
+            <div>
+                <h1>About Me</h1>
+            </div>
+            <div>
+                <p>
+                    <br>
+                    <strong><i>I am actively seeking full-time positions for game design teams!</i></strong>
+                    <br><br>I'm 24 years old with a BS in Game Design & Development from Rochester Institute of Technology, and was born and raised in NYC. I wanted to be a game developer since 
+                    7th grade, which was when I started self-teaching programming and paying attention to the industry. I primarily focused on programming and logic-driven thinking for a long time, 
+                    but after finally gaining some real industry experience, my true passion and strengths in game design shone through. I believe 
+                    I am truly a strong candidate for a game design team, and my technical background will allow me to work with programming teams very easily.
+                    <br><br>
+                    I believe one of my best qualities is my ability to be flexible. This being said and despite my main focus being design, I am open to other roles including production,
+                    programming, balance work, and voice acting.
+                    <br><br>
+                    I've played multiple games at top rank and professional levels, including Team Fortress 2, CS:GO, and Division 1 Collegiate 
+                    Overwatch at RIT. This means that aside from formal experience, I have a keen eye for game design and balance at a high level through pure exposure.
+                    <br><br>
+                </p>
+            </div>
+        </div>
+        <div class="headshot">
+            <img src="media/headshot.jpg" alt="Headshot">
+        </div>
+    </div>
+    <div class="small-spacer">
+    </div>
+    <br>
+    <div class="footer-div">
+        <ul class="socials">
+            <li><a href="https://www.linkedin.com/in/aidan-roberts/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/Freshly_Forged/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="mailto:aidanroberts629@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-envelope fa-rotate-270"></i></a></li>
+            <li><a href="https://github.com/aidanroberts629" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </div>
+    
+
+    <script>
+        // When the user clicks on div, open the popup
+        function popupToggle(popupNum) {
+            var popupId = "myPopup" + popupNum; 
+            var popup = document.getElementById(popupId);
+            popup.classList.toggle("show");
+        }
+
+        window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+        }
+
+        //hide name logo and nav bar upon scrolling down
+        var navbar = document.querySelector("nav");
+        var namelogo = document.querySelector(".logo img");
+        
+        var hamburger = document.querySelector(".hamburger");
+
+        var menu = document.querySelector(".menu");
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function()
+        {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos)
+            {
+                namelogo.style.top = "32px";
+
+                navbar.style.top = "150px";
+
+                if(window.innerWidth > 1725)
+                {
+                    menu.style.top = "24px";
+                }
+                else
+                {
+                    menu.style.top = "118px";
+                }
+
+                hamburger.style.top = "136px";
+            }
+            else
+            {
+                namelogo.style.top = "-100px";
+
+                navbar.style.top = "-100px";
+                menu.style.top = "-500px";
+                hamburger.style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+        //force scroll to top of page upon refresh
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+
+        //hamburger menu
+        function toggleMenu() {
+            const nav = document.querySelector('nav.menu');
+            nav.classList.toggle('open');
+        }
+
+    </script>
+</body>
+
+</html>
